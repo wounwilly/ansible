@@ -1,0 +1,10 @@
+---
+- hosts:web
+  remote_user:root
+
+  tasks:Configuration
+  - name: 1. Installation de git
+    apt:name=git update-cache=yes
+  - name: 2. Installation de nano
+    apt:mane=nano
+... 
